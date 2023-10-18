@@ -16,9 +16,13 @@ body {
 
 header {
     display: flex;
+    justify-content: space-between;
     flex-shrink: 0;
     background-color: #282828;
     height: 56px;
+    color: white;
+    align-items: center;
+    padding: 0 .5rem;
 }
 
 
@@ -38,9 +42,38 @@ main {
 .main-content {
     flex-grow: 1;
     background-color: red;
+
 }
 
-.main-content, .side-menu {
+main, .main-content, .side-menu {
     overflow-y: scroll;
+
+}
+
+.menu-btn-and-logo {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+}
+
+
+.settings-and-sign-in {
+    background: transparent;
+    border-radius: 20px;
+    padding: .5rem;
+    font-weight: bold;
+}
+
+.settings-btn {
+    background: none;
+
+}
+.sign-in-btn {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: .5rem;
+    
+
 
 }
